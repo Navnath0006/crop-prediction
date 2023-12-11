@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Crop Prediction</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Add your custom CSS here for color changing */
+    /* Example: */
+    .navbar-custom {
+      background-color: #2b932e; /* Default color */
+    }
+    .navbar-custom.blue {
+      background-color: #7fb3d5; /* Blue color */
+    }
+    .navbar-custom.orange {
+      background-color: #f39c12; /* Orange color */
+    }
+    /* CSS for image and content box */
+    /* ... (your CSS styles) ... */
+    .image-container {
+      width: 100%;
+      height: 60vh; /* 60% of viewport height */
+      position: relative;
+      overflow: hidden;
+      /* position: fixed; */
+    }
+
+    .image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Ensure the image covers the entire container */
+      animation: hoverEffect 4s ease-in-out infinite alternate;
+    }
+
+    .content-bo{
+      position: absolute;
+      bottom:0;
+      /* top: 5%; */
+      left: 18%;
+      background-color: rgba(240, 226, 226, 0.9); /* Adjust opacity as needed */
+      width:150px;
+      height: 100%;
+      padding: 200px;
+      box-sizing: border-box;
+    }
+    .content-box {
+      position: absolute;
+      bottom:0;
+      text-align:left;
+      text-align: center; /* Horizontal text alignment */
+      line-height: 1.2; /* Line height for better readability */
+      padding: 20px; /* Padding inside the content box */
+      margin: 0; /* Remove default margin */
+      /* Additional styling based on your preferences */
+      background-color: rgba(241, 232, 232, 0.4); 
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width:28%;
+      height: 100%;
+      padding: 20px;
+      left: 15%;
+      /* color: rgb(6, 101, 9); */
+    }
+    @keyframes hoverEffect {
+      0% {
+        transform: scale(1);
+      }
+      100% {
+        transform: scale(1.05);
+      }
+    }
+  </style>
+</head>
+<body class="container">
+
+<!-- Your existing navigation bar -->
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+    <div class="container">
+      <a class="navbar-brand" href="#">CROPS PREDICTION </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                CROPS
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="crops.php">Cassava 🍠 </a>
+                <a class="dropdown-item" href="crops.php">Tomoto 🍅</a>
+                <a class="dropdown-item" href="crops.php">Banana 🍌</a>
+                <a class="dropdown-item" href="crops.php">Apple 🍎</a>
+                <a class="dropdown-item" href="crops.php">Cashew 🍐</a>
+              </div>
+            </li> -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              MODELS
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="proposed CNN.html">Proposed CNN</a>
+              <a class="dropdown-item" href="Inception V3.html">InceptionV3</a>
+              <a class="dropdown-item" href="DenseNet121.html">DenseNet121</a>
+              <a class="dropdown-item" href="RESNET50.html">RESNET50</a>
+              <!-- <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Other Links</a>
+            </div> -->
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Image container with the image and content box -->
+  <!-- ... Image and content box content ... -->
+  <div class="image-container">
+    <img src="https://media.istockphoto.com/id/965148388/photo/green-ripening-soybean-field-agricultural-landscape.jpg?b=1&s=612x612&w=0&k=20&c=DW2JASyhTNohu2b0i06TJEPXG9rjnTHMvQrWS_jy550=" alt="Image" />
+  
+    <!-- Content box -->
+    <div class="content-box">
+      <h1>CROP DISEASE PREDICTION</h1>
+      <p>
+        Predicting crop diseases using machine learning involves gathering extensive
+        data on crop types, environmental factors, disease history, and other relevant
+        parameters. Employing advanced algorithms, this data is analyzed to develop
+        predictive models that forecast potential diseases affecting crops.
+        By implementing these predictive models, farmers can anticipate and proactively
+        address potential diseases, enabling them to take timely preventive measures, optimize crop yield, and minimize economic losses.</p>
+      <!-- Add your content here -->
+    </div>
+  
+</div>
+
+<div class="card text-bg-secondary mb-3" id="about" style="max-width:100%; height: 100%; background-color: #7da788;
+  margin: 20px; padding: 10px;">
+    <div class="card-header"><h2>CNN Convolutional Neural Network in Machine Learning</h2></div>
+    <div class="card-body">
+      <h3>Deep Learning</h3>
+      <p>Deep learning is a branch of machine learning where artificial neural networks, inspired by the human brain, learn from large datasets to autonomously recognize patterns and make predictions without explicit
+         programming. It involves training layered networks that progressively extract intricate features from data, 
+         enabling its application in various fields such as image recognition, natural language processing, 
+         and complex decision-making tasks. Through its hierarchical representation of data,
+          deep learning has driven technological advancements in industries like healthcare, finance,
+           and autonomous systems</p>
+      <h3 class="card-title">Convolutional Neural Network</h3> 
+      <p>A Convolutional Neural Network (CNN) is a type of deep learning algorithm primarily used for image recognition and computer 
+        vision tasks, although it has applications in other domains like natural language processing and signal processing. CNNs are inspired by the organization and functioning 
+        of the human visual system and have proven to be highly effective in analyzing visual data.</p>
+        <p>
+          <h3>Basic Components of a CNN</h3>
+            <p>
+              <b>Convolutional Layers:</b> Use filters to extract features from an image. <br>
+             <b> Activation Function:</b> Introduces non-linearity to learn complex patterns (usually ReLU). <br>
+              <b>Pooling Layers:</b> Reduce image dimensions to control complexity and overfitting. <br>
+              <b>Fully Connected Layers:</b> Connect all neurons for high-level understanding. <br>
+              <b>Softmax Layer: </b>Outputs probabilities for different classes in classification. <br>
+            </p>
+        </p>
+        <p>
+          <h3>How CNNs Work:</h3>
+          <p><b>Feature Learning:</b> CNNs learn simple features like edges, then complex ones through layers. <br>
+            <b>Hierarchy of Features:</b> Different layers learn features of increasing complexity. <br>
+            <b>Training:</b> Using labeled data, CNNs adjust weights to minimize prediction errors. <br>
+           <b> Prediction: </b>Once trained, CNNs can predict classes for new images based on learned patterns.</p>
+        </p>
+        <h3>CNN Moel in Prediction of crops</h3>
+        <p>The task you've described involves utilizing various pre-trained deep learning models (Proposed CNN, InceptionV3, DenseNet121, RESNET50) in a Python programming
+           environment to predict crop diseases. Here's a definition that encapsulates the process. <br> <br>
+
+          "Utilizing pre-trained deep learning models like Proposed CNN, InceptionV3, DenseNet121, and RESNET50 within a Python-based framework to perform crop disease prediction.
+           The models analyze image data to predict diseases, generating a confusion matrix, accuracy, 
+           and loss graphs for evaluation. The final results include accuracy, precision, recall, and F1 score metrics, 
+           providing a comprehensive assessment of the models' predictive performance in identifying crop diseases." <br><br>
+          <p><b>Training Data: </b>A larger portion (typically 80% of the dataset) is used to train the models. This data is utilized by the model to learn patterns and features associated with the problem at hand (e.g., identifying crop diseases). <br> <br>
+
+          <b>Testing Data:</b> A smaller portion (usually 20% of the dataset) remains untouched during the training phase. This portion serves as an unseen 
+             dataset used to evaluate the model's performance after training. It helps assess how well the model generalizes to new, unseen data.</p>
+          This process involves leveraging pre-existing deep learning architectures specialized in image recognition to diagnose crop diseases,
+           evaluating their predictive accuracy using standard evaluation metrics, and presenting a comprehensive assessment of their performance</p>
+      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+    </div>
+  </div>
+<div class="card text-bg-secondary mb-3" style="max-width:75%; height: 300px; background-color: #85a6c7;
+margin: 20px; padding: 10px;">
+    <div class="card-header"> <h2> <a href="proposed CNN.html">PROPOSED CNN</h2></div></a> 
+    <!-- <div class="card-body"> -->
+      <h5 class="card-title"><h4>For crop disease prediction using a proposed CNN model:</h4></h5>
+      <p class="card-text">A proposed CNN model for crop disease prediction is a tailored Convolutional Neural Network architecture customized with specialized 
+        layers and training techniques, aimed at accurately identifying and classifying diseases affecting crops from 
+        images of leaves or plants. This model is optimized to discern intricate patterns and features in the visual
+         data of crops, enabling accurate prediction and classification of various diseases, thereby assisting in timely 
+         and targeted agricultural interventions.</p>
+    </div>
+  </div>
+  <div class="card text-bg-success mb-3" style="max-width:75%; height: 350px; background-color: #85a6c7;
+  margin: 20px; padding: 10px;">
+    <div class="card-header"><h2> <a href="Inception V3.html">INCEPTION V3</h2></a></div>
+    <div class="card-body">
+      <h4 class="card-title">For crop disease prediction using the Inception v3 CNN model</h4>
+      <p class="card-text"> The Inception v3 model is like a specialized tool designed by Google to look at pictures of plant leaves or crops. It's really good at finding small details and patterns in these pictures. <br>
+         By teaching it with lots of images showing both healthy plants and plants with diseases, it learns to tell the difference between them. So, when you give it a new picture of a plant, it can say whether the plant is healthy or if it has a disease. <br><br>
+    </div>
+  </div>
+
+  <div class="card text-bg-success mb-3" style="max-width:75%; height: 350px; background-color: #85a6c7;
+  margin: 20px; padding: 10px;">
+    <div class="card-header"><h2> <a href="DenseNet121.html">DenseNet121</h2></a></div>
+    <div class="card-body">
+      <h4 class="card-title">For crop disease prediction using the DenseNet121 CNN model:</h4>
+      <p class="card-text">
+        The DenseNet121 model is like a smart tool that looks at pictures of plant leaves or crops. It's great at understanding patterns in these pictures. <br>
+        
+        By showing it many pictures of healthy plants and plants with diseases, the DenseNet121 model learns to tell if a plant is healthy or sick when given a new picture. <br>
+        
+        This helps farmers because it can quickly spot if there's a problem with a plant, allowing them to take care of it before it gets worse.</p>
+    </div>
+  </div>
+
+
+  <div class="card text-bg-success mb-3" style="max-width:75%; height: 350px; background-color: #85a6c7;
+  margin: 20px; padding: 10px;">
+    <div class="card-header"><h2> <a href="RESNET50.html">RESNET50</h2></a></div>
+    <div class="card-body">
+      <h4 class="card-title">For crop disease prediction using the ResNet50 CNN model:</h4>
+      <p class="card-text">
+        The ResNet50 model is like a clever tool made for looking at pictures of plant leaves or crops. It's really good at finding patterns in these pictures. <br>
+        After being shown many pictures of healthy plants and plants with different diseases, the ResNet50 model gets good at recognizing if a plant is healthy or if it's sick when given a new picture. <br>
+        This helps farmers because it can quickly spot problems in plants, letting them take care of issues before they become serious.</p>
+    </div>
+  </div>
+  <footer style="background-color: #333; color: white; text-align: center; padding: 20px;">
+    &copy; 2023 Crop Prediction. All rights reserved. <br>
+  </footer>
+  
+
+<!-- Bootstrap JS and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+// Your JavaScript code if any
+</script>
+</body>
+</html>

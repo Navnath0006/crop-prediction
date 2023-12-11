@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RESNET50 MODEL</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body class="container">
+
+  <!-- First Box (Empty) using Bootstrap Grid System -->
+  <div class="container mt-4" style="max-width:100%; height: 50px;
+  margin: 20px; padding: -30px;>
+    <div class="row">
+      <div class="col-md-4 offset-md-4 border" style="top: 10px;"></div>
+    </div>
+  </div>
+
+  <!-- Second Box for Content using Bootstrap -->
+  <div class="container mt-4" style="max-width:100%; height:400px; background-color: #cfe684;
+  margin: 20px; padding: 10px;>
+    <div class="row">
+      <div >
+        <div style="background-color: #56a96c; padding: 10px; text-align: right;">
+            <a href="index.html" style="color: white; margin-right: 20px; text-decoration: none;">Home</a>
+          </div>
+      
+    
+            <p><h2>RESNET50 MODEL</h2></p>
+            <p><b><h4>Overview:</h4></b>
+                ResNet50 is a convolutional neural network (CNN) architecture known for its residual learning framework. It introduces shortcut connections that skip one or more layers, mitigating the vanishing gradient problem and enabling the training of very deep networks
+            </p>
+            <p><b><h4>Key Features:</h4></b>
+                <ul>
+                  <li><b>Residual Learning:</b> Introduces skip connections to facilitate the training of deep networks.</li>
+                  <li><b>Vanishing Gradient:</b> Addresses the vanishing gradient problem, allowing the training of extremely deep models.</li>
+                  <li><b>High Accuracy:</b> ResNet50 architectures often achieve state-of-the-art performance in image classification tasks.</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+       
+  <div class="card text-bg-primary mb-3" style="max-width:100%; height:100%; background-color: #cfe684;
+  margin: 20px; padding: 10px; top: -15px;">
+    <!-- <div class="card-header" style="text-align: center;"><h3>PROPOSED CNN MODEL</h3></div> -->
+          <p>  <h3> <b>ALGORITHM</b></h3>
+            1. Prepare and augment image data for training using data augmentation techniquesbr <br>
+            2. Load and preprocess training and testing datasets using TensorFlow <br>
+            3. Build a CNN model with convolutional layers, pooling layers, and a dense output layer
+            <br>model = tf.keras.Sequential([
+                # ... CNN layers ...
+            ]) <br>
+            4. Compile the model with appropriate loss function, optimizer, and metrics <br>
+            model.compile( <br>
+                loss='categorical_crossentropy', <br>
+                optimizer=tf.keras.optimizers.Adam(), <br>
+                metrics=['accuracy'] <br>
+            ) <br>
+            
+            5. Train the model on the training data, using checkpoints to save the best model <br>
+            history = model.fit( <br>
+                 ** Training data ** <br>
+            ) <br>
+            
+            6. Visualize training and validation metrics to assess model performance <br>
+            7. Evaluate the trained model on test data to calculate accuracy and other metrics
+            model.evaluate(test_data) <br>
+            8. Visualize model predictions on test data to compare true and predicted labels <br>
+            9. Generate and display a confusion matrix to understand the model's classification performance <br>
+            10. Calculate metrics like accuracy, precision, recall, and F1-score using sklearn.metrics <br>
+          </p>
+      </p>
+    </div>
+  </div>
+  <div class="card text-bg-success mb-3" style="max-width:100%; height: 100%; background-color: rgb(133, 199, 143);
+  margin: 20px; padding: 10px; top: -10px;">
+    <div class="card-header"><h2>Example Data Set</h2></div>
+    <div class="card-body">
+      <h4 class="card-title">BANANA </h4>
+      <p class="card-text"> <b>Data Preparation:</b>
+
+        Collect data related to banana crops and split it into two parts—80% for training the model and 20% for testing its accuracy.
+        <br><b>CNN Model Building:</b>
+        
+        Develop a Convolutional Neural Network (CNN) model using TensorFlow or Keras tailored for predicting banana crop attributes.
+       <br><b> Training and Evaluation:</b>
+        
+        Train the model using the 80% training data and assess its performance using the 20% test data to calculate accuracy, precision, recall, and F1 score.
+        <br><b>Graphical Representations:</b>
+        Create a confusion matrix to visualize model predictions, and plot a graph showing the model's loss during training to assess its effectiveness.
+        <br><b>Visualization of Metrics:</b>
+        Display accuracy, precision, recall, and F1 score using bar charts or line graphs for easy understanding of the model's performance.
+        <br><b>Conclusion:</b>
+        Analyze the results and summarize the model's efficiency in predicting banana crop attributes based on the evaluation metrics obtained <br><br>
+    </div>
+  </div>
+  
+  <div class="container mt-4" style="max-width: 100%; margin: 20px; padding: 10px; background-color: #cfe684;">
+    <h2 style="color:;">RESULTS</h2>
+    <!-- First Image with Definition -->
+    <div class="row">
+      <div class="col-sm-2">
+        <img src="Images/Banana Training dada.png" alt="Image 1" style="width: 500px; border: 2px solid white; border-radius: 10px;">
+      </div>
+      <div class="col-sm-10" style=" margin: 10px;">
+        <p style="color:"><h3>Consider data for Training</p>
+      </div>
+    </div>
+     <!-- Second Image with Definition -->
+    <div class="row">
+        <div class="col-sm-2">
+          <img src="Images/Banana Original vs augmented comparision.png" alt="Image 1" style="width: 300px; border: 2px solid white; border-radius: 10px;">
+        </div>
+        <div class="col-sm-10" style=" margin: 10px;">
+          <p style="color: black"><h3>Original Vs Augmented Images Compasion </h3>This visualization allows a comparison between the original images and their corresponding augmented versions,
+             side by side in pairs, showing how the augmentation techniques modify the original data </p>
+            </div>
+      </div>
+
+   
+   
+    <!-- Third Image with Definition -->
+    <div class="row">
+        <div class="col-sm-2">
+          <img src="Images/Resnet 50/Loss.png" alt="Image 1" style="width: 600px; border: 2px solid white; border-radius: 10px;">
+        </div>
+        <div class="col-sm-10" style=" margin: 10px;">
+          <p style="color: black"><h3>Training Progess Metrics LOSS and Accurecy </h3>This visualization helps in assessing the training progression of a machine learning model by observing how the
+             loss and accuracy metrics evolve over epochs. It's useful for understanding whether the model is learning effectively or if there are signs of overfitting or underfitting based on the behavior of these metrics</p>
+            </div>
+      </div>
+
+
+    <!-- Fourth Image with Definition -->
+    <div class="row">
+        <div class="col-sm-2">
+          <img src="Images/Banana Model prediction vs Truelabels.png" alt="Image 1" style="width: 600px; border: 2px solid white; border-radius: 10px;">
+        </div>
+        <div class="col-sm-10" style=" margin: 10px;">
+          <p style="color: black"><h3>Model Prediction Vs True Labels</h3>This visualization allows for a qualitative assessment of a model's performance by displaying the test images alongside their true labels and the model's 
+            predictions. The title of each subplot indicates the true and predicted classes, highlighting any mismatches between the model's predictions and the actual labels in red</p>
+            </div>
+      </div>
+
+
+    <!-- Fifth Image with Definition -->
+    <div class="row">
+        <div class="col-sm-2">
+          <img src="Images/Resnet 50/matrix.png" alt="Image 1" style="width: 500px; border: 2px solid white; border-radius: 10px;">
+        </div>
+        <div class="col-sm-10" style=" margin: 10px;">
+          <p style="color: black"><h3>Evaluation Matrics Calculatis</h3>This code snippet assesses the model's performance by computing various evaluation metrics such as accuracy, precision, recall, and F1 score based on the predictions
+             (y_pred) and true labels (y_true) obtained from a test dataset. These metrics provide insights into the model's classification performance across multiple classes</p>
+            </div>
+      </div>
+    
+  <h2 style="text-align: center;">Performance Metrics</h2>
+
+  <table style="border-collapse: collapse; width: 50%; margin: 20px auto;">
+    <tr>
+      <th style="border: 1px solid black; padding: 8px; background-color: #f2f2f2;">Metric</th>
+      <th style="border: 1px solid black; padding: 8px; background-color: #f2f2f2;">Value</th>
+    </tr>
+    <tr>
+      <td style="border: 1px solid black; padding: 8px; text-align: center;">Epochs</td>
+      <td style="border: 1px solid black; padding: 8px; text-align: center;">10</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid black; padding: 8px; text-align: center;">Accuracy</td>
+      <td style="border: 1px solid black; padding: 8px; text-align: center;">0.2698412698412698</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid black; padding: 8px; text-align: center;">Precision</td>
+      <td style="border: 1px solid black; padding: 8px; text-align: center;">0.072814310909549</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid black; padding: 8px; text-align: center;">Recall</td>
+      <td style="border: 1px solid black; padding: 8px; text-align: center;">0.2698412698412698</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid black; padding: 8px; text-align: center;">F1 Score</td>
+      <td style="border: 1px solid black; padding: 8px; text-align: center;">0.11468253968253968</td>
+    </tr>
+  </table>
+   <!-- Footer -->
+   <footer style="background-color: #333; color: white; text-align: center; padding: 20px;">
+    &copy; 2023 Crop Prediction. All rights reserved. <br>
+  </footer>
+  <body>
+    
+
+  <!-- Bootstrap JS and jQuery (optional, for some features) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

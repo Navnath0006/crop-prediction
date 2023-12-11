@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Add your custom CSS here for color changing */
+    /* Example: */
+    .navbar-custom {
+      background-color: #2b932e; /* Default color */
+    }
+    .navbar-custom.blue {
+      background-color: #7fb3d5; /* Blue color */
+    }
+    .navbar-custom.orange {
+      background-color: #f39c12; /* Orange color */
+    }
+    /* CSS for image and content box */
+    /* ... (your CSS styles) ... */
+    .image-container {
+      width: 100%;
+      height: 60vh; /* 60% of viewport height */
+      position: relative;
+      overflow: hidden;
+      /* position: fixed; */
+    }
+
+    .image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Ensure the image covers the entire container */
+      animation: hoverEffect 4s ease-in-out infinite alternate;
+    }
+
+    .content-bo{
+      position: absolute;
+      bottom:0;
+      /* top: 5%; */
+      left: 18%;
+      background-color: rgba(240, 226, 226, 0.9); /* Adjust opacity as needed */
+      width:150px;
+      height: 100%;
+      padding: 200px;
+      box-sizing: border-box;
+    }
+    .content-box {
+      position: absolute;
+      bottom:0;
+      text-align:left;
+      text-align: center; /* Horizontal text alignment */
+      line-height: 1.2; /* Line height for better readability */
+      padding: 20px; /* Padding inside the content box */
+      margin: 0; /* Remove default margin */
+      /* Additional styling based on your preferences */
+      background-color: rgba(241, 232, 232, 0.4); 
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width:28%;
+      height: 100%;
+      padding: 20px;
+      left: 15%;
+      /* color: rgb(6, 101, 9); */
+    }
+    @keyframes hoverEffect {
+      0% {
+        transform: scale(1);
+      }
+      100% {
+        transform: scale(1.05);
+      }
+    }
+  </style>
+</head>
+<body class="container">
+
+<!-- Your existing navigation bar -->
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+    <div class="container">
+      <a class="navbar-brand" href="">CROPS PREDICTION </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="contact.php">CROPS</a>
+          </li> -->
+          <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                CROPS
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="crops.php">Cassava 🍠 </a>
+                <a class="dropdown-item" href="crops.php">Tomoto 🍅</a>
+                <a class="dropdown-item" href="crops.php">Banana 🍌</a>
+                <a class="dropdown-item" href="crops.php">Apple 🍎</a>
+                <a class="dropdown-item" href="crops.php">Cashew 🍐</a>
+              </div>
+            </li> -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              MODELS
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="proposed CNN.html">Proposed CNN</a>
+              <a class="dropdown-item" href="Inception V3.html">InceptionV3</a>
+              <a class="dropdown-item" href="DenseNet121.html">DenseNet121</a>
+              <a class="dropdown-item" href="RESNET50.html">RESNET50</a>
+              <!-- <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Other Links</a>
+            </div> -->
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Image container with the image and content box -->
+  <!-- ... Image and content box content ... -->
+  <div class="image-container">
+    <img src="https://media.istockphoto.com/id/965148388/photo/green-ripening-soybean-field-agricultural-landscape.jpg?b=1&s=612x612&w=0&k=20&c=DW2JASyhTNohu2b0i06TJEPXG9rjnTHMvQrWS_jy550=" alt="Image" />
+  
+    <!-- Content box -->
+    <div class="content-box">
+      <h1>CONTACT</h1>
+      <p>
+       AMULYA GULATI
+      <!-- Add your content here -->
+    </div>
+  
+</div>
+
+  <footer style="background-color: #333; color: white; text-align: center; padding: 20px;">
+    &copy; 2023 Crop Prediction. All rights reserved. <br>
+  </footer>
+  
+
+<!-- Bootstrap JS and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+// Your JavaScript code if any
+</script>
+</body>
+</html>
